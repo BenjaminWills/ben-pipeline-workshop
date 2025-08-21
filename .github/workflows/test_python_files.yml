@@ -16,7 +16,7 @@ jobs:
     - name: Checkout repository (clone repo into virtual machine)
       uses: actions/checkout@v3
     - name: Install python to the virtual machine
-      uses: action/setup-python
+      uses: actions/setup-python@v4.6.0
     - name: Install our requirements
       run: pip install -r requirements.txt
     - name: Run tests
